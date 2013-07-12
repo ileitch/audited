@@ -8,4 +8,9 @@ module Audited
   @ignored_attributes = %w(lock_version created_at updated_at created_on updated_on)
 
   @current_user_method = :current_user
+
+  def self.rails_attr_accessible_available?
+    require 'rails'
+    ::Rails::VERSION::STRING < '4'
+  end
 end

@@ -1,4 +1,5 @@
 require 'active_record'
+require 'rails-observers'
 require 'audited/auditor'
 require 'audited/adapters/active_record/audit'
 

@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |gem|
   gem.name    = 'audited-activerecord'
-  gem.version = '3.0.0'
+  gem.version = '4.0.0'
 
   gem.authors     = ['Brandon Keepers', 'Kenneth Kalmer', 'Daniel Morrison', 'Brian Ryckbost', 'Steve Richert', 'Ryan Glover']
   gem.email       = 'info@collectiveidea.com'
@@ -12,7 +12,7 @@ Gem::Specification.new do |gem|
   gem.license     = 'MIT'
 
   gem.add_dependency 'audited', gem.version
-  gem.add_dependency 'activerecord', '~> 3.0'
+  gem.add_dependency 'activerecord', '~> 4.0'
 
   gem.files         = `git ls-files lib`.split($\).grep(/(active_?record|generators)/)
   gem.files         << 'LICENSE'
